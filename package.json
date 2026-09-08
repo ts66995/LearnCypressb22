@@ -1,0 +1,23 @@
+{
+  "name": "learncypressb22",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "allTests": "npx cypress run",
+    "login": "npx cypress run --spec cypress/e2e/login.cy.js",
+    "loginHeadedChrome": "npx cypress run --spec cypress/e2e/login.cy.js --headed --browser=chrome",
+    "QA": "npx cypress run --spec cypress/e2e/login.cy.js --headed --browser=chrome --config-file=cypress.qa.config.js"
+  },
+  "dependencies": {
+    "cypress": "^15.12.0",
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-xpath": "^2.0.1"
+  }
+}
