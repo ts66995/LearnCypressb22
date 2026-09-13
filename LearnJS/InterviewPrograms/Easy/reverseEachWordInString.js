@@ -2,18 +2,18 @@
 // str = "I love JavaScript"
 //output = "I evol tpircSavaJ"
 //ReverseStringWords.js
-let str = "I love JavaScript";
-function revWords(str) {
-  let revStr1 = ''
+let sentence = "I love JavaScript";
+function revSentence(sentence) {
+  let revSentence = ''
   let revWords = ''
-  let arrWords = str.split(' ')
+  let arrWords = sentence.split(' ')
   for (ele of arrWords) {
     revWords = revString(ele)
-    revStr1 += ' ' + revWords
+    revSentence += ' ' + revWords
   }
-  return revStr1
+  return revSentence
 }
-console.log(revWords(str))
+console.log(revSentence(sentence))
 function revString(str) {
   let revStr = ''
   for (i = str.length - 1; i >= 0; i--) {

@@ -43,7 +43,7 @@ console.log("This is JS class")
 // }
 
 
-if(6==5){
+if(6==5){//This is block B 
 
     console.log("This is block A ")
 }
@@ -85,7 +85,7 @@ else{
 
 var marks = 96
 
-if(marks >= 90){
+if(marks >= 90){//Grade A+
 
     console.log("Grade A+")
 }

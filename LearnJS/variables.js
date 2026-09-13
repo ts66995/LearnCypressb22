@@ -14,7 +14,7 @@ var  x= "Raju"
 x= "Monika"
 
 var x = "Mahesh"
-console.log(x)
+console.log(x)//Mahesh
 
 //ES6
 
@@ -26,7 +26,7 @@ num1 = 30
 
 //let num1 = 40
 
-console.log(num1)
+console.log(num1)//30
 
 // const stu = "Diwakar"
 
@@ -40,10 +40,10 @@ var greet = "HI"
 
 if(4>3){
 
-  console.log(greet)
-  let gr1 = "Namaste"
+  console.log(greet)//HI
+  let gr1 = "Namaste"//Namaste
 
   console.log(gr1)
 }
 
-console.log(gr1 + "   Out side od the block")
+console.log(gr1 + "   Out side od the block")//ReferenceError: gr1 is not defined

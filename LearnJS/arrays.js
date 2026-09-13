@@ -6,13 +6,13 @@ var arr = [1,3,4,5,6]
 var arr2 = ["Raju", 30, "bangalore",  undefined]
 
 
-console.log(arr2[7])
+console.log(arr2[7])//undefined
 
-console.log(arr2.length)
+console.log(arr2.length)//4
 
-console.log(arr2[2])
+console.log(arr2[2])//bangalore
 
-console.log(arr2[arr2.length-2])
+console.log(arr2[arr2.length-2])//bangalore
 
 // adding the element push and unshift 
 //push - to add element at the end of the array
@@ -20,11 +20,11 @@ console.log(arr2[arr2.length-2])
 
 var arr3 = ["Raju", 30, "bangalore"]
 
-arr3.push("Mahesh")
+arr3.push("Mahesh")//[  'Raju', 30, 'bangalore', 'Mahesh' ]
 
-arr3.unshift("Shiva")
+arr3.unshift("Shiva")// [ 'Shiva', 'Raju', 30, 'bangalore', 'Mahesh' ]
 
-console.log(arr3)
+console.log(arr3)//[ 'Shiva', 'Raju', 30, 'bangalore', 'Mahesh' ]
 
 console.log("-----remove the element pop and shift ------------");
 // remove the element pop and shift 
@@ -34,38 +34,38 @@ console.log("-----remove the element pop and shift ------------");
 
 var arr4  = ["Shiva" ,"Raju", 30, "bangalore", "Mahesh"]
 
-arr4.pop()
-arr4.shift()
+arr4.pop()// [ 'Shiva', 'Raju', 30, 'bangalore' ]
+arr4.shift()//[  'Raju', 30, 'bangalore' ]
 
-console.log(arr4)
+console.log(arr4)//[  'Raju', 30, 'bangalore' ]
 
 //sort() - sort elements in acending order 
 
-arr5 = ["shiva", "Arun", "pradeep", "mahesh", "Raju"]
+arr5 = ["shiva", "Arun", "pradeep", "mahesh", "Raju"]//[ 'Arun', 'Raju', 'mahesh', 'pradeep', 'shiva' ]
 
 arr6 = arr5.sort()
 
-console.log(arr6)
+console.log(arr6)//[ 'Arun', 'Raju', 'mahesh', 'pradeep', 'shiva' ]
 
 arr7 = [4,9,6,7,2,1]
 
 arr8 = arr7.sort()
-console.log(arr8)
+console.log(arr8)//[ 1, 2, 4, 6, 7, 9 ]
 
-console.log(arr8.reverse())
+console.log(arr8.reverse())//[ 9, 7, 6, 4, 2, 1 ]
 
 arr9 = ["shiva", "Arun", "pradeep", "mahesh", "Raju"]
 
 arr9[1]= "girish"
 
-console.log(arr9)
+console.log(arr9)//[ 'shiva', 'girish', 'pradeep', 'mahesh', 'Raju' ]
 
 console.log("-----includes - to check whether element is present or not ------------");
 //includes - to check whether element is present or not 
 
-console.log(arr9.includes("Raju"))
+console.log(arr9.includes("Raju"))//true
 
-if(arr9.includes("Rekha")){
+if(arr9.includes("Rekha")){//element is not present
 
     console.log("element is present")
 }
@@ -74,7 +74,7 @@ else {
     console.log("element is not present")
 }
 
-console.log(arr9.indexOf("pradeep"))
+console.log(arr9.indexOf("pradeep"))//2
 
 
 getelements = [3,5,6,7,8]
@@ -91,35 +91,35 @@ strarr = ["shiva", "Arun", "pradeep", "mahesh", "Raju"]
 
 finalarr = getelements1.concat(strarr)
 
-console.log(finalarr)
+console.log(finalarr)//[ 3,5,6,7,8,'shiva','Arun','pradeep','mahesh','Raju']
 
 strarr = [3,5,6,7,8,"shiva", "Arun", "pradeep", "mahesh", "Raju"]
 
 console.log("-----slice ------------");
 
-// arr10 = strarr.slice(3)
+arr10 = strarr.slice(3)
 
-// console.log(arr10)
+console.log(arr10)//[ 7, 8, 'shiva', 'Arun', 'pradeep', 'mahesh', 'Raju' ]
 
 console.log("-----splice ------------");
 
-arr11 = strarr.splice(3,5)
+arr11 = strarr.splice(3,5)//[ 7, 8, 'shiva', 'Arun', 'pradeep' ]
 
 
-console.log(arr11)
+console.log(arr11)//[ 7, 8, 'shiva', 'Arun', 'pradeep' ]
 
 
 newarr = ["shiva", "Arun", "pradeep", "mahesh", "Raju"]
 
 str = newarr.join("")
 
-console.log(str)
+console.log(str)//shivaArunpradeepmaheshRaju
 
 str2 = "Thimma raju"
 
 arr12 = str2.split("")
 
-console.log(arr12)
+console.log(arr12)//[ 'T', 'h', 'i', 'm', 'm', 'a', ' ', 'r', 'a', 'j', 'u']
 
 //======================================================
 console.log("-----write a JS program to reverse a string ------------");
@@ -190,16 +190,18 @@ console.log("Method 1: Using Object-----");
 let strChars = "banana";
 
 let count = {};
-
-for (let i = 0; i < strChars.length; i++) {
-  let char = strChars[i];
-
-  if (count[char]) {
-    count[char]++;   // increment if exists
-  } else {
-    count[char] = 1; // initialize
-  }
+for(let char of strChars){
+  count[char]=(count[char]||0)+1
 }
+// for (let i = 0; i < strChars.length; i++) {
+//   let char = strChars[i];
+
+//   if (count[char]) {
+//     count[char]++;   // increment if exists
+//   } else {
+//     count[char] = 1; // initialize
+//   }
+// }
 
 console.log(count); //{ b: 1, a: 3, n: 2 }
 console.log("Method 2: Using for...of (Clean Code)");

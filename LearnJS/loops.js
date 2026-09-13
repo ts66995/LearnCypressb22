@@ -1,7 +1,7 @@
 
 //console.log("My Name is Raju")
 
-import { afterEach } from "mocha"
+// import { afterEach } from "mocha"
 
 
 // for(initialization; condition ; increment/decrement){
@@ -85,7 +85,7 @@ import { afterEach } from "mocha"
 
 // while(condition){
 
-//     //block od code 
+//     //block of code 
 //     //increment / decrement 
 // // }
 
@@ -106,11 +106,9 @@ import { afterEach } from "mocha"
 // }while(condition)
 
 let i = 0
-
 do{
-
     console.log("This is do while loop statement")
-    console.log(i)
+    console.log(i) //0,1,2,3,4
   i++
 }while(i<=4)
 

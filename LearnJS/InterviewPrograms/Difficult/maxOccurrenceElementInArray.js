@@ -3,9 +3,10 @@ This program finds the element(s) that occur the maximum number of times in an a
 The frequency of each element. The highest frequency.
 The element(s) having that highest frequency.
 */
-let arr = ['Hi', 'hello', 'x', 'A', 'Hi', 'Hi', 'hello', 'Hello'];
+//o/p: [ 'hi', 'hello' ]
+// let arr = ['Hi', 'hello', 'x', 'A', 'Hi', 'Hi', 'hello', 'Hello'];
 // let arr=[2,3,1,2,4,5,7,3,1,2,3]
-// let arr="heLLo wOrld"
+let arr="Hello World Welcome to the javascript"
 let obj = {}
 let maxOccurances = 0
 let maxString = []
@@ -22,6 +23,8 @@ for (ele of arr) {
   }
   // Count occurrences
   obj[ele] = (obj[ele] || 0) + 1
+  // Keep track of maximum frequency
+    maxOccurances = Math.max(maxOccurances, obj[ele]);
 }
 console.log(obj)
 /*
@@ -29,12 +32,13 @@ console.log(obj)
 { '1': 2, '2': 3, '3': 3, '4': 1, '5': 1, '7': 1 }
 { h: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1 }
 */
-//findinding the maximum number of times the object element appeared
-for (ele in obj) {
-  if (obj[ele]> maxOccurances) {
-    maxOccurances = obj[ele]//obj[ele] will return the value of ele i.e 3 for "Hi" and hello
-  }
-}
+// //findinding the maximum number of times the object element appeared
+// for (ele in obj) {
+//   if (obj[ele]> maxOccurances) {
+//     maxOccurances = obj[ele]//obj[ele] will return the value of ele i.e 3 for "Hi" and hello
+    
+//   }
+// }
 //adding the maximum number of times appeared object element to the maxString[] array
 for (ele in obj) {
   if (maxOccurances == obj[ele]) {

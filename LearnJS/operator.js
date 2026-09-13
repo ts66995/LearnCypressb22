@@ -4,14 +4,14 @@ var x = 20
 var y = 40
 
 
-console.log(x+y)
+console.log(x+y)//60
 
 var stu1 = 20
 var stu2 = "70"
 
-console.log(stu1+stu2)
+console.log(stu1+stu2)//2070
 
-console.log(40+20+"20"+30+40)
+console.log(40+20+"20"+30+40)//60203040
 
 //-, /, *, %
 
@@ -19,7 +19,7 @@ var k = 51
 
 var l = 3
 
-console.log(k%l)
+console.log(k%l)//0
 
 //+ , -, / , *, % - arithemetic operators 
 
@@ -30,10 +30,11 @@ console.log(k%l)
 // ==  it will compare only 2 values but not datatypes 
 
 // === it will compare not only values but also datatypes
+console.log(10=="10")//true
+console.log(10==="10")//false
 
-console.log(10==="10")
 
-console.log(27<=27)
+console.log(27<=27)//true
 
 //Logical Operators 
 
@@ -66,12 +67,12 @@ console.log(27<=27)
 
 // 1  0
 
-console.log((10==="10")||(45<34))
+console.log((10==="10")||(45<34))//false
 
-console.log((10==="10")&&(45<34))
+console.log((10==="10")&&(45<34))//false
 
-console.log(!(10=="10"))
-
+console.log(!(10=="10"))//false
+/*
 // Assignment 
 
 // =
@@ -85,13 +86,13 @@ x= 5
 //x++ // x= x+1
 
 x-- //x = x-1
-console.log(x)
+console.log(x)//4
 
 y = 5
 
 y *= 4 // y = y*4
 
-console.log(y)
+console.log(y)//20
 
 
 //Ternary operator
@@ -105,12 +106,12 @@ stu2 = "Hema"
 
 z = 10==="10" ? stu1 : stu2
 
-console.log(z)
+console.log(z)//Hema
 
 num1 = 40
 
 num2 = undefined
 
-console.log(num1+num2)
+console.log(num1+num2)//NaN
 
-//NaN  -- not a number 
+//NaN  -- not a number */

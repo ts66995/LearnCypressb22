@@ -26,23 +26,23 @@ z = `Raju's place is "Bangalore"`
 // ""
 // ''
 // ``
-console.log(typeof(y))
+console.log(typeof(y))//string
 
 value1 = false
 
-console.log(typeof(value1))
+console.log(typeof(value1))//boolean
 
 var value2 ;
 
-console.log(typeof(value2))
+console.log(typeof(value2))//undefined
    
 var value3 = undefined   // var value3
 
-console.log(typeof(value3))
+console.log(typeof(value3))//undefined
 
 var stu = null
 
-console.log(typeof(stu))
+console.log(typeof(stu))//object
 
 //null return type is object this the defect in JS 
 
@@ -56,10 +56,10 @@ arr3 = ["Raju", 32, "Bangalore", true , null]
 
 //index starts from 0 
 
-console.log(arr3[2])
+console.log(arr3[2])//Bangalore
 
-console.log(typeof(arr3[2]))
-console.log(typeof(arr3))
+console.log(typeof(arr3[2]))//string
+console.log(typeof(arr3))//object
 
 //2 objects
 
@@ -72,6 +72,6 @@ var car = {
 }
 
 
-// console.log(car.model)
+console.log(car.model)//XUV300
 
-// console.log(typeof(car))
+console.log(typeof(car))//object

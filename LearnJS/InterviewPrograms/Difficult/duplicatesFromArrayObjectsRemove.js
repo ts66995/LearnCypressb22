@@ -1,4 +1,6 @@
 //DuplicatesFromArrayObjectsRemove.js
+// o/p: Unique IDs as Array: [ 1, 2, 3, 4 ]
+// Duplicate IDs as Array: [ 1, 2 ]
 let products = [
   { id: 1, name: "dell laptop", price: 60000 },
   { id: 2, name: "lenova laptop", price: 70000 },

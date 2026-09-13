@@ -1,3 +1,5 @@
+//Unique=[ 3, 4, 5, 6 ]
+//Duplicates=[ 1, 2 ]
 let arr = [1, 2, 3, 4, 5, 1, 2, 6];
 // let arr = "Automation"
 let obj = {};

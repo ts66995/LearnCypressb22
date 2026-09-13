@@ -12,19 +12,19 @@ Output: [1, 2, 3, 4, 5, 6]
 // arr.flat(Infinity): flattens all levels, regardless of how deeply nested the array is.
 // 2. Using Recursion ⭐ Interview Approach
 const arr1 = [1, [2, 3], [4, [5, 6]]];
-const result1 = [];
-function flatten(array) {
-    for (let element of array) {
+function flatten(arr1,flatArr=[]) {
+    for (let element of arr1) {
         if (Array.isArray(element)) {
-            flatten(element);
+            flatten(element,flatArr);
         } else {
-            result1.push(element);
+            flatArr.push(element);
         }
     }
+    return flatArr
 }
-flatten(arr1);
-console.log(result1); //o/p: [1, 2, 3, 4, 5, 6]
-
+// flatten(arr1);
+console.log(flatten(arr1)); //o/p: [1, 2, 3, 4, 5, 6]
+//Here, every recursive call receives the same flatArr reference.
 // How recursion works
 // Initially: [1, [2, 3], [4, [5, 6]]]
 // We process: 1  It's not an array, so: result.push(1);

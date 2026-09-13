@@ -6,7 +6,7 @@ for (let num of arr) {
         secondSmallest = smallest;
         smallest = num;
     } 
-    else if (num > smallest && num < secondSmallest) {
+    else if (num < secondSmallest && num > smallest) {
         secondSmallest = num;
     }
 }
