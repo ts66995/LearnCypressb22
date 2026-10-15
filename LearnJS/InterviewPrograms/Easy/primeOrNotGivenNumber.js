@@ -1,5 +1,5 @@
 //Given number is prime or not
-let num = 97
+let num = 173
 console.log(isPrime(num))
 function isPrime(num) {
   if (num <= 1) {

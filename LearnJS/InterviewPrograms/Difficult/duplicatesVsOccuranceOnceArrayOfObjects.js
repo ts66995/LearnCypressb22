@@ -1,3 +1,16 @@
+/*
+o/p:
+Unique IDs: [ 3, 4 ]
+Duplicate IDs: [ 1, 2 ]
+Unique Products: [
+  { id: 3, name: 'Real Me', price: 18000 },
+  { id: 4, name: 'Mi TV', price: 20000 }
+]
+Duplicate Products: [
+  { id: 1, name: 'dell laptop', price: 60000 },
+  { id: 2, name: 'lenova laptop', price: 70000 }
+]
+  */
 let products = [
   { id: 1, name: "dell laptop", price: 60000 },
   { id: 2, name: "lenova laptop", price: 70000 },

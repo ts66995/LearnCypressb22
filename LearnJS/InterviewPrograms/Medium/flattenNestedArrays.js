@@ -23,7 +23,8 @@ function flatten(arr1,flatArr=[]) {
     return flatArr
 }
 // flatten(arr1);
-console.log(flatten(arr1)); //o/p: [1, 2, 3, 4, 5, 6]
+// console.log(flatten(arr1)); //o/p: [1, 2, 3, 4, 5, 6]
+// flattenArr is a function parameter with a default value, not a locally declared variable. The array itself is mutable, and the same array reference is passed through the recursive calls.
 //Here, every recursive call receives the same flatArr reference.
 // How recursion works
 // Initially: [1, [2, 3], [4, [5, 6]]]

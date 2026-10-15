@@ -3,6 +3,7 @@ console.log(RandomNumInRange(1000, 10000))
 function RandomNumInRange(min, max) {
   return Math.floor(Math.random() * (max - min) + min)
 }
+
 /*
 -Math.random() generates a random decimal number between 0 (inclusive) and 1 (exclusive).
 Ex:0.12345

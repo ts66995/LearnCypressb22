@@ -7,13 +7,13 @@ function areAnagrams(str1, str2) {
   const obj = {};
   // obj characters in first string
   for (let ele of str1) {
-    //obj[ele] = (obj[ele] || 0) + 1;
-    if (obj[ele]) {//1st time of the character it will return undefined and obj[char] will 
-                    //be assigned to 1 next time onwards counter will be incremented by 1
-      obj[ele] = obj[ele] + 1;
-    } else {
-      obj[ele] = 1;
-    }
+    obj[ele] = (obj[ele] || 0) + 1;
+    // if (obj[ele]) {//1st time of the character it will return undefined and obj[char] will 
+    //                 //be assigned to 1 next time onwards counter will be incremented by 1
+    //   obj[ele] = obj[ele] + 1;
+    // } else {
+    //   obj[ele] = 1;
+    // }
   }//o/p: {a: 1, d: 1, b: 2, c: 2}
   // Consume characters from second string
   for (let ele of str2) {

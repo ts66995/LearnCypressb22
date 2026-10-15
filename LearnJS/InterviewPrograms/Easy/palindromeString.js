@@ -19,6 +19,7 @@ if (isPalindrome(str)) {
 } else {
   console.log("not palindrome");
 }
+
 /*
 I compare characters from both ends of the string. 
 I start from index 0 and compare it with the last index 

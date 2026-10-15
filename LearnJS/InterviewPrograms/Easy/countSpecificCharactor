@@ -1,0 +1,24 @@
+// let input="Apple And BANANA"
+// function countChar(input) {
+//     let count = 0;
+//     for (const char of input) {
+//         if (char.toLowerCase() === "a") {
+//             count++;
+//         }
+//     }
+//     console.log(`Number of A's: ${count}`);
+// }
+// countChar(input);
+
+let input="Apple And BANANA"
+let specificChar="p"
+function countChar(input) {
+    let count = 0;
+    for (const char of input) {
+        if (char.toLowerCase() === specificChar.toLowerCase()) {
+            count++;
+        }
+    }
+    console.log(`Number of times the character ${specificChar}'s present in the given string: ${input}: ${count}`);
+}
+countChar(input);

@@ -11,7 +11,7 @@ console.log(nums.sort((a, b) => {
 //o/p: [2, 4, 6, 8,10, 1, 5, 9]
 //Sorting the array of numbers
 // console.log(nums.sort((a, b) => a-b))
-
+nums.sort((a,b)=>(a%2)-(b%2)||a-b)
 const nums = [9, 8, 6, 5, 2, 4, 1, 10];
 nums.sort((a, b) => (a % 2) - (b % 2) || a - b);//[2, 4, 6, 8,10, 1, 5, 9] //Even → ascending → Odd → ascending.
 console.log(nums);

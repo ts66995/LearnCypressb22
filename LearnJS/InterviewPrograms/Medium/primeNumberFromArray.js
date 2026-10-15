@@ -34,4 +34,3 @@ for (let num = 10; num <= 100; num++) {
        rangePrime.push(num)
     }
 }
-d

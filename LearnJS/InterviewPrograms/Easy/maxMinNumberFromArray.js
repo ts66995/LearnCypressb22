@@ -16,9 +16,17 @@ for (ele of arr) {
   }
 }
 console.log(`Minimum number: ${minNo}`) //1
+console.log("-------------Using reduce method---------")
 let nums = [2, 3, 4, 5, 13, 4, 7, 8, 2];
 let maxNum = nums.reduce((max, ele) => ele > max ? ele : max, nums[0])
 let minNum = nums.reduce((min, ele) => ele < min ? ele : min, nums[0])
 console.log(`Maximum number: ${maxNum}`) //13
 console.log(`Minimum number: ${minNum}`) //2
 //If the current element is greater than the current maximum, make it the new maximum.
+
+console.log("-------------Using sort method---------")
+const arr1 = [2, 4, 6, 2, 1, 9, 5]
+const sortedArr=arr1.sort((a,b)=>a-b)
+
+console.log("max num: "+sortedArr[sortedArr.length-1])
+console.log("min num: "+sortedArr[0])
